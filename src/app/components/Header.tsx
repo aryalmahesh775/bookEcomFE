@@ -74,6 +74,22 @@ const Header = () => {
     // Handle logout logic here
   };
 
+  //   const menuItems = [  ... is JavaScript spread operator. In the context of arrays (like in your menuItems), it is used to "spread" elements of an array into another array.
+  //   ...(user
+  //     ? [/* items if user is logged in */]
+  //     : [/* items if not logged in */]),
+
+  //   // more items...
+
+  //   ...(user ? [/* logout item */] : []),
+  // example:
+  // const base = [1, 2];
+  // const extra = [3, 4];
+
+  // const combined = [...base, ...extra];
+  // // Result: [1, 2, 3, 4]
+  // ];
+
   const menuItems = [
     ...(user && user
       ? [
